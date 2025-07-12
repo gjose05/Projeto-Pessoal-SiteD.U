@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+.contact-container {
+  max-width: 100%;  /* Largura reduzida */
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Montserrat';  /* Fonte Montserrat */
+}
+
+.contact-header h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.contact-content-simple {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.map-section {
+  height: 100%;
+  width: 150%;
+}
+
+.map-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #000000;
+  font-weight: 800;
+}
+
+.map-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: #0066cc;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.map-link:hover {
+  text-decoration: underline;
+}
+
+.info-section-simple {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0.5rem;
+  margin-left: 350px;
+}
+
+.info-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-top: 80px;
+}
+
+.info-item a {
+  color: #000000;
+  line-height: 1.6;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.info-item a:hover {
+  color: #444444;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .contact-container {
+    height: 80vh;
+    padding: 1rem;
+  }
+
+  .contact-header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: sticky;
+    top: 0;
+    padding: 1rem 0;
+    z-index: 10;
+  }
+
+  .contact-content-simple {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    height: calc(80vh - 150px);
+  }
+
+  .map-section {
+    width: 100%;
+    height: 30vh;
+    order: 1;
+  }
+
+  .map-section h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .info-section-simple {
+    margin-top: 320px;
+    margin-left: 0;
+    padding: 0;
+    gap: 1.5rem;
+    order: 2;   
+    display: flex; /* Ativa o flexbox */
+    flex-direction: row; /* Elementos lado a lado */
+    justify-content: space-between; /* Espaço entre os elementos */
+    align-items: flex-start; 
+  }
+
+  .info-item {
+    margin-top: 0;
+  }
+
+  .info-item h3 {
+    font-size: 1.2rem;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+  }
+
+  .info-item a {
+    font-size: 1rem;
+  }
+
+  .map-link {
+    font-size: 0.8rem;
+  }
+
+  /* Melhorias para touch */
+  a, .map-link {
+    padding: 0.3rem 0;
+    display: block;
+  }
+   /* Garante que o container não ultrapasse 80vh */
+  @media (max-height: 700px) {
+    .contact-header h1 {
+      font-size: 1.3rem;
+    }
+    
+    .info-item h3 {
+      font-size: 1.1rem;
+    }
+    
+    .map-section {
+      height: 25vh;
+    }
+  }
+}

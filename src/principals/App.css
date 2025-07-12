@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header{
+  height:13vh;
+}
+
+.home-container-app{
+  height: 70vh;
+}
+
+.mostruario-container-app{
+  height: 150vh;
+  background: linear-gradient(to bottom, #ffffff, #e9dfd1 50%);
+}
+
+.sobre-container-app{
+  height: 100vh;
+  background: linear-gradient(to bottom, #e9dfd1, RGB(245, 241, 235) 20%);
+}
+
+.paginaContatos{
+  height: 100vh;
+  background: linear-gradient(to bottom, RGB(245, 241, 235), #c9c6c6  80%);
+}
+
+.site-footer {
+  background-color: #414141; 
+  color: white;
+  padding: 24px 0; /* sem padding lateral */
+  text-align: center;
+  font-size: 0.9rem;
+font-weight: 800;
+  width: 100%;
+  position: relative;
+  left: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.footer-content p {
+  margin: 6px 0;
+}
+
+@media (max-width: 767px) {
+  .header{
+    height: 9vh;
+    width: 100%;
+  }
+
+  .home-container-app{
+  height: 145vh;
+}
+
+.mostruario-container-app{
+  height: 260vh;
+}
+
+.sobre-container-app{
+  height: 100vh;
+}
+
+.paginaContatos{
+  height: 110vh;
+}
+}

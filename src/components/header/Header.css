@@ -1,0 +1,281 @@
+.navbar-container {
+    position: fixed; /* Fixa a navbar */
+    top: 0;          /* Alinha no topo */
+    left: 0;         /* Alinha à esquerda */
+    width: 100%;     /* Largura total */
+    z-index: 1000;   /* Garante que fique acima de outros elementos */
+    
+    height: 13vh;
+    background: black;
+    display: flex;
+    align-items: center; 
+    padding: 0 20px;
+}
+
+/* parte ESQUERDA da navbar */
+.image-navbar-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+.image-navbar {
+    width: 50%;
+}
+
+.logoDU-image-navbar {
+    width: 100%; 
+    object-fit: contain; 
+}
+
+.DUname-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin-left: 10px;
+}
+
+.DUname-text{
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 3rem;
+}
+
+/* parte CENTRAL da navbar */
+.buttons-navbar-container {
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  width: auto; 
+}
+
+.buttons-navbar {
+  padding: 0 20px;
+}
+
+.navbar-list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 8px 12px;
+  transition: all 0.5s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-link:hover {
+  color: #838383;
+  transform: translateY(-3px);
+}
+
+.navbar-link.active {
+  border-bottom: 2px solid white;
+}
+
+/*parte DIREITA da navbar*/
+.redeSocial-navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    width:auto; 
+    position: absolute; 
+    right: 20px; 
+}
+
+.redeSocial-navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    width: auto;
+    height: auto;
+}
+
+
+/* Instagram */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+}
+
+.social-icon {
+  width: 25px;
+  height: 25px;
+  transition: transform 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+  transform: scale(1.1);
+}
+
+.social-link.icon-only {
+  justify-content: center;
+}
+
+/*Whatsapp*/
+
+.whatsapp-logo {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  color: white;
+}
+
+.whatsapp-icon {
+  width: 25px;
+  height: 25px;
+  fill: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-logo:hover .whatsapp-icon {
+  transform: scale(1.1);
+}
+
+
+/*resposividade mobile */
+@media (max-width: 767px)  {
+  .navbar-container {
+    height: 10vh;
+    padding: 0px 2px;
+    width:100%;
+}
+
+/* parte ESQUERDA da navbar */
+.image-navbar-container {
+    width: 20%;
+}
+
+.image-navbar {
+    width: 50%;
+}
+
+.DUname-container{
+    margin-left: 0px;
+}
+
+.DUname-text{
+    font-size: 1.6rem;
+}
+
+.buttons-navbar-container {
+  position: absolute; 
+  left: 23%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  margin-left: 60px;
+  height: 100%; 
+}
+
+.buttons-navbar {
+  height: 100%;
+  display: flex;
+  align-items: center; 
+}
+
+.navbar-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 5px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.navbar-link {
+  font-size: 0.7rem;
+  padding: 2px 6px;
+  text-align: center; 
+  display: block;
+}
+
+/*parte DIREITA da navbar*/
+.redeSocial-navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    height: 100%;
+    margin-left: 60px;
+}
+
+.redeSocial-navbar {
+    display: flex;
+    justify-content: center;
+    gap: 5px; 
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Instagram */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+  margin-left: 10px;
+}
+/*Whatsapp*/
+
+.whatsapp-logo {
+  display: flex;
+  padding: 0px;
+  align-items: center;
+  border-radius: 0px;
+  transition: all 0.2s ease;
+  color: white;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+
+.whatsapp-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-logo:hover .whatsapp-icon {
+  transform: scale(1.1);
+}
+
+}
