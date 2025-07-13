@@ -65,8 +65,7 @@ font-weight: 400;
 }
 
 .mostruario-container-app{
-  height: 260vh;
-
+  height: 220vh;
 }
 
 .sobre-container-app{
@@ -75,5 +74,11 @@ font-weight: 400;
 
 .paginaContatos{
   height: 110vh;
+}
+
+@media (max-width: 400px){
+  .mostruario-container-app{
+  height: 270vh;
+}
 }
 }

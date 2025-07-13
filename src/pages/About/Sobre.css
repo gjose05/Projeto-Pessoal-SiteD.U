@@ -120,12 +120,11 @@
 
 .gallery-layout {
   gap: 1.5rem;
-  height: 300px;
+  height: 45%;
 }
 
 .side-image {
-  height: 450px;
-
+  height: 167%;
 }
 
 .side-image.left {
