@@ -169,7 +169,7 @@
 
 /* parte ESQUERDA da navbar */
 .image-navbar-container {
-    width: 20%;
+    width: 25%;
 }
 
 .image-navbar {
@@ -177,6 +177,7 @@
 }
 
 .DUname-container{
+    width: 50%;
     margin-left: 0px;
 }
 
@@ -190,8 +191,8 @@
   transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  width: 25%;
-  margin-left: 60px;
+  width: 50%;
+  margin-left: 30%;
   height: 100%; 
 }
 
@@ -222,15 +223,14 @@
 .redeSocial-navbar-container {
     display: flex;
     align-items: center;
-    width: 100%; 
+    width: 20%; 
     height: 100%;
-    margin-left: 60px;
 }
 
 .redeSocial-navbar {
     display: flex;
     justify-content: center;
-    gap: 5px; 
+    gap: 10px; 
     width: 100%;
     height: 100%;
 }
@@ -252,7 +252,7 @@
   width: 20px;
   height: 20px;
   transition: transform 0.3s ease;
-  margin-left: 10px;
+  margin-left: 30px;
 }
 /*Whatsapp*/
 
@@ -263,8 +263,7 @@
   border-radius: 0px;
   transition: all 0.2s ease;
   color: white;
-  margin-left: 5px;
-  margin-right: 15px;
+  margin-right: 5px;
 }
 
 .whatsapp-icon {

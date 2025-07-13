@@ -125,6 +125,21 @@
 
 .side-image {
   height: 450px;
+
+}
+
+.side-image.left {
+  margin-right: -15%;
+  transform: perspective(1000px) rotateY(25deg) translateX(-30%);
+  box-shadow: 40px 0 60px rgba(0, 0, 0, 0.3);
+  clip-path: inset(0 20% 0 0);
+}
+
+.side-image.right {
+  margin-left: -15%;
+  transform: perspective(1000px) rotateY(-25deg) translateX(30%);
+  box-shadow: -40px 0 60px rgba(0, 0, 0, 0.3);
+  clip-path: inset(0 0 0 20%);
 }
 
 .side-image img {
