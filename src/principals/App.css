@@ -55,30 +55,29 @@ font-weight: 400;
 }
 
 @media (max-width: 767px) {
-  .header{
+  .header {
     height: 9vh;
   }
 
-  .home-container-app{
-  height: 145vh;
+  .home-container-app {
+    height: 145vh;
+  }
 
+  .mostruario-container-app {
+    height: 220vh;
+  }
+
+  .sobre-container-app {
+    height: 100vh;
+  }
+
+  .paginaContatos {
+    height: 110vh;
+  }
 }
 
-.mostruario-container-app{
-  height: 220vh;
-}
-
-.sobre-container-app{
-  height: 100vh;
-}
-
-.paginaContatos{
-  height: 110vh;
-}
-
-@media (max-width: 400px){
-  .mostruario-container-app{
-  height: 270vh;
-}
-}
+@media (max-width: 400px) {
+  .mostruario-container-app {
+    height: 270vh;
+  }
 }
