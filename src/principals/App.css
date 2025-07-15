@@ -76,7 +76,7 @@ font-weight: 400;
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   .home-container-app {
     height: 160vh;
   }
